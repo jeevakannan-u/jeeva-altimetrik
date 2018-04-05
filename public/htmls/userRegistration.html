@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+</head>
+<body>
+	<h1>User Registration</h1>
+	<div class='clearfix' style='margin:10px;'>
+		<form class="form-horizontal" action="/user/register" method="POST">
+		   <fieldset>
+		      <div id="legend">
+		         <legend class="">Register</legend>
+		      </div>
+		      <div class="control-group">
+		         <label class="control-label" for="firstname">First Name</label>
+		         <div class="controls">
+		            <input type="text" id="firstname" name="firstname" placeholder="" class="input-xlarge" value='Testing FName'>
+		         </div>
+		      </div>
+		      <div class="control-group">
+		         <label class="control-label" for="lastname">Last Name</label>
+		         <div class="controls">
+		            <input type="text" id="lastname" name="lastname" placeholder="" class="input-xlarge">
+		         </div>
+		      </div>
+		      <div class="control-group">
+		         <label class="control-label" for="country">Username</label>
+		         <div class="controls">
+		            <select  id="country" name="country" placeholder="" class="" style='width:175px;'>
+		           		<option>India</option>
+		           		<option>United States</option>
+		           	</select>
+		         </div>
+		      </div>
+		      <div class="control-group">
+		         <label class="control-label" for="username">Username</label>
+		         <div class="controls">
+		            <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
+		         </div>
+		      </div>
+		      <div class="control-group">
+		         <label class="control-label" for="email">E-mail</label>
+		         <div class="controls">
+		            <input type="text" id="email" name="email" placeholder="" class="input-xlarge">
+		         </div>
+		      </div>
+		      <div class="control-group">
+		         <label class="control-label" for="password">Password</label>
+		         <div class="controls">
+		            <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
+		         </div>
+		      </div>
+		      <div class="control-group">
+		         <label class="control-label" for="password_confirm">Password (Confirm)</label>
+		         <div class="controls">
+		            <input type="password" id="password_confirm" name="password_confirm" placeholder="" class="input-xlarge">
+		         </div>
+		      </div>
+		      <br/>
+		      <div class="control-group">
+		         <div class="controls">
+		            <button id='registerBtn' class="btn btn-success">Register</button>
+		         </div>
+		      </div>
+		   </fieldset>
+		</form>
+	</div>
+	
+	<script type="text/javascript" src='/javascripts/userRegistration.js'></script>
+	
+</body>
+
+</html>
